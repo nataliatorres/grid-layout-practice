@@ -150,3 +150,15 @@ div.item > p {
     background-color: #FFDEAD ;
     grid-column: 2/3;
 }
+
+.minmax-container {
+    display: grid;
+    grid-template-columns: minmax(30px, 300px) minmax(30px, 300px) minmax(60px, 250px);
+    grid-template-rows: repeat(3, auto);
+    place-self: start;
+    background-color: powderblue;
+}
+
+.minmax-container > .area-item {
+    border: 3px solid skyblue;
+}
