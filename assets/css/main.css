@@ -107,19 +107,17 @@ div.item > p {
 
 .test-container {
     display: grid;
+    width: fit-content;
     grid-template-columns: 150px 150px 150px;
     grid-template-rows: 75px 75px 75px;
-    grid-template-areas:
-    "header header header"
-    "side main main"
-    "side main main";
-    place-content: center;
-    border: 5px solid #f6dcdc;
+    place-self: center;
+    background-color: #d3cd9a;
 }
 
 .test-container  > .area-item  {
     display: inherit;
     font-size: 3rem;
+    margin: 2px;
 }
 .test-container  > .area-item > p  {
     margin: 0;
